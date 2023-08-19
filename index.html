@@ -55,6 +55,7 @@
                         <div
                             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
+                                id="kitchen-one"
                                 class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
@@ -76,14 +77,15 @@
                                         <input type="radio" name="rating-2"
                                             class="mask mask-star-2 bg-yellow-400" />
                                     </div>
-                                    <h2 class="card-title font-bold">K.
+                                    <h2 id="kitchen-one-header" class="card-title font-bold">K.
                                         Accessories</h2>
-                                    <p class="text-gray-400"><span>39.00</span>
+                                    <p class="text-gray-400"><span id="kitchen-one-price">39.00</span>
                                         TK</p>
 
                                 </div>
                             </div>
                             <div
+                                id="kitchen-two"
                                 class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
@@ -104,14 +106,15 @@
                                         <input type="radio" name="rating-2"
                                             class="mask mask-star-2 bg-yellow-400" />
                                     </div>
-                                    <h2 class="card-title font-bold">K.
+                                    <h2 id="kitchen-two-header" class="card-title font-bold">K.
                                         Accessories</h2>
-                                    <p class="text-gray-400"><span>25.00</span>
+                                    <p class="text-gray-400"><span id="kitchen-two-price">25.00</span>
                                         TK</p>
 
                                 </div>
                             </div>
                             <div
+                                id="kitchen-three"
                                 class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
@@ -132,8 +135,8 @@
                                         <input type="radio" name="rating-2"
                                             class="mask mask-star-2 bg-yellow-400" />
                                     </div>
-                                    <h2 class="card-title font-bold">Home Cooker</h2>
-                                    <p class="text-gray-400"><span>49.00</span>
+                                    <h2 id="kitchen-three-header" class="card-title font-bold">Home Cooker</h2>
+                                    <p class="text-gray-400"><span id="kitchen-three-price">49.00</span>
                                         TK</p>
 
                                 </div>
@@ -146,6 +149,7 @@
                         <div
                             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
+                                id="sport-one"
                                 class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
@@ -166,14 +170,15 @@
                                         <input type="radio" name="rating-2"
                                             class="mask mask-star-2 bg-yellow-400" />
                                     </div>
-                                    <h2 class="card-title font-bold">Sports Back
+                                    <h2 id="sport-one-header" class="card-title font-bold">Sports Back
                                         Cap</h2>
-                                    <p class="text-gray-400"><span>49.00</span>
+                                    <p class="text-gray-400"><span id="sport-one-price">49.00</span>
                                         TK</p>
 
                                 </div>
                             </div>
                             <div
+                                id="sport-two"
                                 class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
@@ -194,14 +199,15 @@
                                         <input type="radio" name="rating-2"
                                             class="mask mask-star-2 bg-yellow-400" />
                                     </div>
-                                    <h2 class="card-title font-bold">Full Jersey
+                                    <h2 id="sport-two-header" class="card-title font-bold">Full Jersey
                                         Set</h2>
-                                    <p class="text-gray-400"><span>69.00</span>
+                                    <p class="text-gray-400"><span id="sport-two-price">69.00</span>
                                         TK</p>
 
                                 </div>
                             </div>
                             <div
+                                id="sport-three"
                                 class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
@@ -222,9 +228,9 @@
                                         <input type="radio" name="rating-2"
                                             class="mask mask-star-2 bg-yellow-400" />
                                     </div>
-                                    <h2 class="card-title font-bold">Sports
+                                    <h2 id="sport-three-header" class="card-title font-bold">Sports
                                         cates</h2>
-                                    <p class="text-gray-400"><span>159.00</span>
+                                    <p class="text-gray-400"><span id="sport-three-price">159.00</span>
                                         TK</p>
 
                                 </div>
@@ -240,39 +246,44 @@
                             coupon?
                         </h1>
                         <input
-                            class="border-2 border-gray-200 py-2.5 px-2 rounded-lg w-44"
+                            id="coupon-input" class="border-2 border-gray-200 py-2.5 px-2 rounded-lg w-44"
                             type="text" placeholder="Coupon code">
                         <button
-                            class="py-3 px-4 bg-[#E527B2] text-white font-medium rounded-r-lg relative -ml-2">Apply
+                            id="coupon-btn" class="py-3 px-4 bg-[#E527B2] text-white font-medium rounded-r-lg relative -ml-3" disabled>Apply
                         </button>
                     </div>
                     <div
                         class="mb-8 bg-white mt-0 py-4 px-5 rounded-lg text-lg font-medium text-[#111] my-5">
-                        <ol class="space-y-1 mb-3">
-                            <li>Home Cooker</li>
-                            <li>Sports Cates</li>
-                            <li>Home Cookers</li>
-                        </ol>
+                        <div id="purchase-entry" class="space-y-1 mb-3">
+                            
+                        </div>
                         <hr class="mb-6">
-                        <div class="">
-                            <p>Total Price: <span class="text-gray-400">00.00</span> TK</p>
-                            <p>Discount: <span class="text-gray-400">00.00</span> TK</p>
-                            <p>Total: <span class="text-gray-400">00.00</span> TK</p>
+                        <div class>
+                            <p>Total Price: <span id="total-price" class="text-red-500">00.00</span>
+                                TK</p>
+                            <p>Discount: <span id="discount-price" class="text-red-500">00.00</span>
+                                TK</p>
+                            <p>Total: <span id="final-price" class="text-red-500">00.00</span>
+                                TK</p>
                         </div>
                         <hr class="my-7">
                         <button
-                            class="py-3 px-14 bg-[#E527B2] text-white font-medium rounded-lg" onclick="my_modal_2.showModal()">Make
+                            id="purchase-button" class="py-3 px-14 bg-[#E527B2] text-white font-medium rounded-lg hover:bg-pink-900"
+                            onclick="my_modal_2.showModal()" disabled>Make
                             Purchase
                         </button>
                         <dialog id="my_modal_2" class="modal">
-                            <form method="dialog" class="modal-box flex flex-col justify-center items-center p-14">
-                              <img src="./images/congo.png" alt="">
-                              <h3 class="font-bold text-5xl">Congratulations</h3>
-                              <p class="py-4">Your Purchase the product</p>
-                              <button class="py-3 px-5 text-white font-medium rounded-lg bg-[#E527B2]">Go Home</button>
+                            <form method="dialog"
+                                class="modal-box flex flex-col justify-center items-center p-14">
+                                <img src="./images/congo.png" alt>
+                                <h3 class="font-bold text-5xl">Congratulations</h3>
+                                <p class="py-4">Your Purchase the product</p>
+                                <button
+                                    id="gohome-btn" class="py-3 px-5 text-white font-medium rounded-lg bg-[#E527B2]">Go
+                                    Home</button>
                             </form>
                             <form method="dialog" class="modal-backdrop">
-                              
+
                             </form>
                         </dialog>
                     </div>
