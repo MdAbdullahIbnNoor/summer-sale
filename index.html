@@ -19,12 +19,12 @@
         <header class="bg-[#F9F6E2] font-work">
             <!-- banner section -->
             <section
-                class="container mx-auto flex flex-row justify-around items-center gap-5 py-10 mb-10">
-                <div class="w-1/2 ">
+                class="container mx-auto flex flex-col-reverse lg:flex-row justify-around items-center gap-5 py-10 mb-10">
+                <div class="lg:w-1/2 w-full">
                     <h2
-                        class="text-center text-[#111] text-2xl font-medium mb-11">---SALE
+                        class="text-center text-[#111] text-xl lg:text-2xl font-medium mb-8 lg:mb-11">---SALE
                         FEVER---</h2>
-                    <h1 class="text-center font-bold text-6xl mb-20">Purchase TK
+                    <h1 class="text-center font-bold text-3xl lg:text-6xl mb-8 lg:mb-20">Purchase TK
                         200 or<br>above & get <span class="text-[#E527B2]">20%
                             off</span></h1>
                     <div
@@ -36,7 +36,7 @@
                         </button>
                     </div>
                 </div>
-                <div>
+                <div class="w-3/4 lg:w-full">
                     <img src="./images/Summer 1.png" alt>
                 </div>
 
@@ -45,18 +45,18 @@
 
         <main class="container mx-auto font-work">
             <!-- shopping section -->
-            <section class="flex flex-row justify-around items-start mb-10">
+            <section class="flex lg:flex-row flex-col justify-around items-start mb-10">
                 <!-- Card section -->
-                <div class="flex-1">
+                <div class="lg:flex-1 w-full">
                     <!-- Kichen Cards Container -->
                     <div>
-                        <h1 class="text-4xl font-bold text-black mb-10">Kitchenware</h1>
+                        <h1 class="text-4xl font-bold text-black lg:mb-10 mb-8 lg:text-left text-center lg:ml-14">Kitchenware</h1>
                         <!-- kitchen cards -->
                         <div
                             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="kitchen-one"
-                                class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
+                                class="lg:w-72 w-80 mx-auto bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
                                     <img src="./images/prod1.png"
@@ -86,7 +86,7 @@
                             </div>
                             <div
                                 id="kitchen-two"
-                                class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
+                                class="lg:w-72 w-80 mx-auto bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
                                     <img src="./images/prod2.png"
@@ -115,7 +115,7 @@
                             </div>
                             <div
                                 id="kitchen-three"
-                                class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
+                                class="lg:w-72 w-80 mx-auto bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
                                     <img src="./images/prod3.png"
@@ -144,13 +144,13 @@
                         </div>
                     </div>
                     <div class="my-10">
-                        <h1 class="text-4xl font-bold text-black mb-10">Sportswear</h1>
+                        <h1 class="text-4xl font-bold text-black lg:mb-10 mb-8 lg:text-left text-center lg:ml-14">Sportswear</h1>
                         <!-- kitchen cards -->
                         <div
                             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="sport-one"
-                                class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
+                                class="lg:w-72 w-80 mx-auto bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
                                     <img src="./images/prod4.png"
@@ -179,7 +179,7 @@
                             </div>
                             <div
                                 id="sport-two"
-                                class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
+                                class="lg:w-72 w-80 mx-auto bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
                                     <img src="./images/prod5.png"
@@ -208,7 +208,7 @@
                             </div>
                             <div
                                 id="sport-three"
-                                class="w-72 bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
+                                class="lg:w-72 w-80 mx-auto bg-base-100 hover:shadow-xl hover:bg-green-100 pt-1 rounded-md">
                                 <figure
                                     class="bg-gray-200 mx-4 my-3 flex justify-center items-center rounded-md h-48">
                                     <img src="./images/prod6.png"
@@ -240,7 +240,7 @@
                 </div>
 
                 <!-- Cart section -->
-                <div class="w-72  flex flex-col">
+                <div class="lg:w-72 w-80 mx-auto flex flex-col">
                     <div class="mb-8 bg-white  mt-20 py-4 px-5 rounded-lg">
                         <h1 class="text-xl font-medium text-[#111] mb-4">Have
                             coupon?
@@ -268,7 +268,7 @@
                         </div>
                         <hr class="my-7">
                         <button
-                            id="purchase-button" class="py-3 px-14 bg-[#E527B2] text-white font-medium rounded-lg hover:bg-pink-900"
+                            id="purchase-button" class="w-3/4 py-3 px-14 bg-[#E527B2] text-white font-medium rounded-lg hover:bg-pink-900 mx-auto"
                             onclick="my_modal_2.showModal()" disabled>Make
                             Purchase
                         </button>

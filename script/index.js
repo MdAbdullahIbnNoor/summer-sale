@@ -1,45 +1,28 @@
-let totalPrice = 0;
+let totalPrice = 0; //Global variable for total price
 
+// 
 document.getElementById('kitchen-one').addEventListener('click', function(){
-    totalPrice = getPriceById('kitchen-one-price');
-    setTotalPrice('total-price', totalPrice);
-    purchaseListEntry('kitchen-one-header');
-    makePurchaseEnable();
+    clickHandle('kitchen-one-price', 'kitchen-one-header');
 })
 
 document.getElementById('kitchen-two').addEventListener('click', function(){
-    totalPrice = getPriceById('kitchen-two-price');
-    setTotalPrice('total-price', totalPrice);
-    purchaseListEntry('kitchen-two-header');
-    makePurchaseEnable();
+    clickHandle('kitchen-two-price', 'kitchen-two-header');
 })
 
 document.getElementById('kitchen-three').addEventListener('click', function(){
-    totalPrice = getPriceById('kitchen-three-price');
-    setTotalPrice('total-price', totalPrice);
-    purchaseListEntry('kitchen-three-header');
-    makePurchaseEnable();
+    clickHandle('kitchen-three-price', 'kitchen-three-header');
 })
 
 document.getElementById('sport-one').addEventListener('click', function(){
-    totalPrice = getPriceById('sport-one-price');
-    setTotalPrice('total-price', totalPrice);
-    purchaseListEntry('sport-one-header');
-    makePurchaseEnable();
+    clickHandle('sport-one-price', 'sport-one-header');
 })
 
 document.getElementById('sport-two').addEventListener('click', function(){
-    totalPrice = getPriceById('sport-two-price');
-    setTotalPrice('total-price', totalPrice);
-    purchaseListEntry('sport-two-header');
-    makePurchaseEnable();
+    clickHandle('sport-two-price', 'sport-two-header');
 })
 
 document.getElementById('sport-three').addEventListener('click', function(){
-    totalPrice = getPriceById('sport-three-price');
-    setTotalPrice('total-price', totalPrice);
-    purchaseListEntry('sport-three-header');
-    makePurchaseEnable();
+    clickHandle('sport-three-price', 'sport-three-header');
 })
 
 document.getElementById('gohome-btn').addEventListener('click', function(){
@@ -66,6 +49,9 @@ document.getElementById('coupon-btn').addEventListener('click', function(){
     if(couponText === 'SELL200'){
         discount = (totalPriceFloat * 0.2).toFixed(2);
     }
+    else if(couponText !== 'SELL200'){
+        alert('The coupon code is invalid');
+    }
 
     setTotalPrice('discount-price', discount);
 
@@ -75,6 +61,13 @@ document.getElementById('coupon-btn').addEventListener('click', function(){
 
     coupon.value = '';
 })
+
+function clickHandle(idOne, idTwo){
+    totalPrice = getPriceById(idOne);
+    setTotalPrice('total-price', totalPrice);
+    purchaseListEntry(idTwo);
+    makePurchaseEnable();
+}
 
 function getPriceById(id){
     const price = document.getElementById(id);
