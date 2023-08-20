@@ -1,6 +1,6 @@
 let totalPrice = 0; //Global variable for total price
 
-// 
+
 document.getElementById('kitchen-one').addEventListener('click', function(){
     clickHandle('kitchen-one-price', 'kitchen-one-header');
 })
@@ -25,6 +25,7 @@ document.getElementById('sport-three').addEventListener('click', function(){
     clickHandle('sport-three-price', 'sport-three-header');
 })
 
+// When click to "Go Home" button it deletes all the child element and restore the price section
 document.getElementById('gohome-btn').addEventListener('click', function(){
     const parentElement = document.getElementById("purchase-entry");
 
@@ -70,8 +71,8 @@ function clickHandle(idOne, idTwo){
 }
 
 function getPriceById(id){
-    const price = document.getElementById(id);
-    const priceFloat = parseFloat(price.innerText);
+    const price = document.getElementById(id).innerText;
+    const priceFloat = parseFloat(price);
     const totalNow = parseFloat(document.getElementById("total-price").innerText);
     const finalPrice = (totalNow + priceFloat).toFixed(2);
     if(finalPrice >= 200){
