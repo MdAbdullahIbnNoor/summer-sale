@@ -40,6 +40,7 @@ document.getElementById('gohome-btn').addEventListener('click', function(){
     document.getElementById("purchase-button").setAttribute('disabled', 'true');
 })
 
+// Coupon applied to reduce 20% 
 document.getElementById('coupon-btn').addEventListener('click', function(){
     const coupon = document.getElementById("coupon-input");
     const couponText = coupon.value;
